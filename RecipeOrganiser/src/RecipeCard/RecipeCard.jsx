@@ -38,12 +38,12 @@ export const RecipeCard = () => {
                 </div>
               </div>
 
-              <button onClick={() => DeleteHandler(item.id)}>Delete</button>
+              <button onClick={() => DeleteHandler(item.id) }>Delete</button>
             </div>
           ))
         )}
 
-        <button onClick={addRecipeHandler}>+</button>
+        <button onClick={addRecipeHandler} style={{display : sortedData.length===0 ? "none":"block"}}>+</button>
       </div>
     </div>
   );
